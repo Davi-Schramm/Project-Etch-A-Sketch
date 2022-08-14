@@ -1,3 +1,14 @@
+var currentcolor = 'black';
+
+function changecurrenctcolor(color){
+    currentcolor = color;
+    const current = document.getElementById("current");
+    current.setAttribute('style',"background-color:"+color+";");
+}
+
+function getcolor(){
+    return currentcolor;
+}
 function Draw(number){
 
     if(!isNaN(number)){
@@ -23,7 +34,7 @@ function Draw(number){
                     matrix[i][j] = document.createElement('div');
                     matrix[i][j].classList.add('flexdraw');
                     matrix[i][j].onmouseover = function(){
-                        this.style.cssText += "background-color:black;";
+                        this.style.cssText += "background-color:"+getcolor()+";";
                     };
                     lines[i].appendChild(matrix[i][j]);
                 }

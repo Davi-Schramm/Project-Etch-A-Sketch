@@ -8,7 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="asker" onclick = "Draw(prompt())">Number of Lines</button>
+    <div id = "HUD">
+    <button id="asker" onclick = "Draw(prompt())">Lines</button>
+    <div id = "color-selector">
+        <div id = "current"></div>
+        <div id = "black" onclick = "changecurrenctcolor('black')"></div>
+        <div id = "white" onclick = "changecurrenctcolor('white')"></div>
+        <div id = "grey" onclick = "changecurrenctcolor('grey')"></div>
+        <div id = "red" onclick = "changecurrenctcolor('red')"></div>
+        <div id = "orange" onclick = "changecurrenctcolor('orange')"></div>
+        <div id = "yellow" onclick = "changecurrenctcolor('yellow')"></div>
+        <div id = "green" onclick = "changecurrenctcolor('green')"></div>
+        <div id = "blue" onclick = "changecurrenctcolor('blue')"></div>
+        <div id = "purple" onclick = "changecurrenctcolor('purple')"></div>
+    </div>
+    </div>
+    
     <div id="container">
 
     </div>

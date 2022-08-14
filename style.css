@@ -1,7 +1,31 @@
 #asker{
     background-color: aquamarine;
-    border-radius: 10%;
+    border-radius: 25%;
     font-size: 20px;
+    margin-top:35px;
+    margin-left: 35px;
+    flex:1;
+    flex-grow: 0;
+    height: 30px;
+}
+#color-selector{
+    padding: 30px;
+    display: flex;
+}
+
+#color-selector div{
+    border: 2px solid black;
+    flex:1;
+    height: 16px;
+    width: 16px;
+    margin: 10px;
+}
+
+#HUD{
+    height: 100px;
+    background-color: lightgray;
+    border: 3px solid black;
+    display: flex;
 }
 
 #container .liner .flexdraw{
@@ -18,4 +42,43 @@
 #container .liner{
     display: flex;
     height: 16px;
+}
+
+#current{
+    background-color: black;
+}
+
+#black{
+    background-color: black;
+}
+
+#white{
+    background-color: white;
+}
+
+#grey{
+    background-color: grey;
+}
+#red{
+    background-color: red;
+}
+
+#orange{
+    background-color: orange;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}
+
+#blue{
+    background-color: blue;
+}
+
+#purple{
+    background-color: purple;
 }
