@@ -1,25 +1,34 @@
-const container = document.getElementById("container");
+function Draw(number){
 
-var matrix = Array(16).fill(Array(16));
-var lines = [];
-for(let i = 0;i<16;i++){
-    const liner = document.createElement("div");
-    liner.classList.add("liner");
-    container.appendChild(liner);
-    lines[i] = liner;
-}
+    if(!isNaN(number)){
+        const numbo = parseInt(number);
+        if (numbo >= 0 && numbo <= 100){
+            const container = document.getElementById("container");
+            container.innerHTML = "";
 
-// i são as linhas
-// j são os blocos
+            var matrix = Array(numbo).fill(Array(numbo));
+            var lines = [];
+            for(let i = 0;i<numbo;i++){
+                const liner = document.createElement("div");
+                liner.classList.add("liner");
+                container.appendChild(liner);
+                lines[i] = liner;
+            }
 
-for(let i = 0;i<16;i++){
-    for(let j = 0;j<16;j++){
-        matrix[i][j] = document.createElement('div');
-        matrix[i][j].classList.add('flexdraw');
-        matrix[i][j].onmouseover = function(){
-            this.style.cssText += "background-color:black;";
-        };
-        lines[i].appendChild(matrix[i][j]);
+            // i são as linhas
+            // j são os blocos
+
+            for(let i = 0;i<numbo;i++){
+                for(let j = 0;j<numbo;j++){
+                    matrix[i][j] = document.createElement('div');
+                    matrix[i][j].classList.add('flexdraw');
+                    matrix[i][j].onmouseover = function(){
+                        this.style.cssText += "background-color:black;";
+                    };
+                    lines[i].appendChild(matrix[i][j]);
+                }
+                
+            }
+        }
     }
-    
 }

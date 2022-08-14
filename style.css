@@ -1,6 +1,7 @@
-#container{
-    width: 21.4%;
-    border: 5px solid aquamarine;
+#asker{
+    background-color: aquamarine;
+    border-radius: 10%;
+    font-size: 20px;
 }
 
 #container .liner .flexdraw{
