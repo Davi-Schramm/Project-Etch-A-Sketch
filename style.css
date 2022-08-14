@@ -5,10 +5,13 @@
 
 #container .liner .flexdraw{
     flex:0 0 auto;
-    border:2px solid black;
     background-color:white;
     width:16px;
     border: 1px solid black;
+}
+
+#container .liner .flexdraw:hover{
+    background-color: black;
 }
 
 #container .liner{
