@@ -1,0 +1,17 @@
+#container{
+    width: 21.4%;
+    border: 5px solid aquamarine;
+}
+
+#container .liner .flexdraw{
+    flex:0 0 auto;
+    border:2px solid black;
+    background-color:white;
+    width:16px;
+    border: 1px solid black;
+}
+
+#container .liner{
+    display: flex;
+    height: 16px;
+}
